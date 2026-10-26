@@ -1169,12 +1169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1284, y: 2778}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3441,6 +3441,7 @@ GameObject:
   - component: {fileID: 2135506304}
   - component: {fileID: 2135506306}
   - component: {fileID: 2135506305}
+  - component: {fileID: 2135506307}
   m_Layer: 5
   m_Name: TimeText
   m_TagString: Untagged
@@ -3500,7 +3501,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Timer : 200'
+  m_Text: 'Timer : '
 --- !u!222 &2135506306
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3509,6 +3510,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135506303}
   m_CullTransparentMesh: 1
+--- !u!114 &2135506307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135506303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3efdd4cbc09cd40b2b05953b78b054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timer
+  time: 10
+  timeText: {fileID: 2135506305}
 --- !u!1001 &2876406611863019526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3518,12 +3533,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: maxSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: moveSpeed
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: smoothing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925629386404535851, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925629386404535851, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1925629386404535851, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: m_IsKinematic
