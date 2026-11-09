@@ -38,7 +38,7 @@ public class Timer : MonoBehaviour
     {
         if (timeText != null)
         {
-            timeText.text = "Timer: " + time.ToString("0");
+            timeText.text = time.ToString("0");
         }
     }
 }

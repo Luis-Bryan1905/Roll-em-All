@@ -6,7 +6,7 @@ Unity based game project for university module "Mobile Game Development"
 ### GAMEPLAY:
 
 * ~~Switch Movement from Accelerometer to gyro~~
-* Shake to Jump
+* ~~Shake to Jump~~
 * Data Persistence (Save Data, High Score)
 * Analytics
 * Creatures in ball
@@ -16,27 +16,26 @@ Unity based game project for university module "Mobile Game Development"
 * Different levels
 * ~~UI fixing for differing mobile ratios~~
 * Settings
-* Functioning Timer
+* ~~Functioning Timer~~
 * Different Collectibles
 * Player death and respawn
 * Enemies
 * Obstacles
 * Multiplayer??
 
-**2/16 = 12% COMPLETE**
+**4/16 = 25% COMPLETE**
 
 
 ### Assets:
 
-* Menu Assets
+* ~~Menu Assets~~
 * Creature Designs
 * Creature Variant Designs
 * Skyboxes
 * Different level themes 
-* UI
-* GUI
+* ~~UI~~
 
-**0/7 = 0% COMPLETE**
+**2/6 = 33% COMPLETE**
 
 
 ### Music:
@@ -53,5 +52,6 @@ Unity based game project for university module "Mobile Game Development"
 
 * Unity Ads
 * Analytics
+* Publish to Platform
 
-**0/2 = 0% COMPLETE**
+**0/3 = 0% COMPLETE**
