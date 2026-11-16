@@ -43,6 +43,8 @@ public class Player : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody>();
         Input.gyro.enabled = true;
+
+
     }
 
 
@@ -56,10 +58,30 @@ public class Player : MonoBehaviour
 
         Vector3 acceleration = Input.acceleration;
 
-        if (acceleration.sqrMagnitude >= maxShake && canJump || jumpAction.IsPressed() && canJump)
+        if (acceleration.sqrMagnitude >= maxShake && canJump)
         {
             JumpBall();
         }
+
+
+    }
+
+    private void Update()
+    {
+        if (jumpAction.WasPressedThisFrame() && canJump)
+        {
+            JumpBall();
+        }
+    }
+
+    void OnEnable()
+    {
+        jumpAction.Enable();
+    }
+
+    void OnDisable()
+    {
+        jumpAction.Disable();
     }
 
     void MoveBall()

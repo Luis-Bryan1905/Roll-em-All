@@ -553,7 +553,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 20, z: 7.6}
+  m_LocalPosition: {x: 0, y: 15, z: 7.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2297,12 +2297,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: canJump
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: maxShake
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: maxSpeed
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpForce
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: moveSpeed
@@ -2314,6 +2322,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: jumpAction.m_Name
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_Interactions
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_ExpectedControlType
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: bec00c3c-fae5-47df-a40f-cfc97c88a21f
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 6ee29d00-552d-4f91-bd57-9134b2a7adb6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Keyboard>/a
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432901517168980002, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: jumpAction.m_SingletonActionBindings.Array.data[1].m_Action
       value: Jump
       objectReference: {fileID: 0}
     - target: {fileID: 1925629386404535851, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
@@ -2329,12 +2377,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4214728631386836997, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214728631386836997, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214728631386836997, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214728631386836997, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4214728631386836997, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4214728631386836997, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2372,6 +2432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5340621524240722053, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cdca6c9bd12aa1741bb352f686a2187a, type: 2}
     - target: {fileID: 5396468834688619146, guid: c0d5410b0840b3545a42363fced816b9, type: 3}
       propertyPath: m_Material
       value: 
