@@ -277,4 +277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MaterialSwap
   Standard: {fileID: 2100000, guid: 8de27e0995f3be14691aed9fdeaabbc5, type: 2}
   Gold: {fileID: 2100000, guid: 9b2e4a66d62820f4faf572968d8d1016, type: 2}
+  Crystal: {fileID: 2100000, guid: becc0ecd5ef3ace4995f3f994d468687, type: 2}
+  Diamond: {fileID: 2100000, guid: 7345d3ecfa4537a408b20b19efd3f966, type: 2}
   IsGold: 0
+  IsCrystal: 0
+  IsDiamond: 0

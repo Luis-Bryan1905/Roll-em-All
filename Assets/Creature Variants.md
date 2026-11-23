@@ -1,6 +1,7 @@
 # Creature Variants:
 
 
+
 **Variants**
 
 1. Gold
@@ -11,6 +12,8 @@
 6. Fire
 7. Water
 8. Electric
+
+**2/6 = 33% COMPLETE**
 
 
 
@@ -35,4 +38,6 @@
 
 
 Creatures (15) X Variants (8) = Total Possibilities (120)
+
+**2/6 = 33% COMPLETE**
 
